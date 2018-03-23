@@ -49,23 +49,7 @@
   </div>
 
   <script type="text/javascript">
-    // Question: What does this code do?
-    $("#reserve-btn").on("click", function (event) {
-      event.preventDefault();
-      var newReservation = {
-        Name: $("#name-input").val().trim(),
-        PhoneNumber: $("#phone-input").val().trim(),
-        Email: $("#email-input").val().trim(),
-        ID: $("#id-input").val().trim()
-      };
-
-      // Question: What does this code do??
-      $.post("/api/new", newReservation)
-        .then(function (data) {
-          console.log(data);
-          alert("Adding reservation...");
-        });
-    });
+  
   </script>
 
 </body>
